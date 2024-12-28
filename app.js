@@ -27,7 +27,9 @@ app.use(methodOverride("_method"));
 app.engine('ejs', ejsMate);
 app.use(express.static(path.join(__dirname,"/public")));
 
-
+app.get("/",(req,res) =>{
+  res.render("listings/Home.ejs");
+})
 app.get("/listings",async(req,res) =>{
      const allListings= await Listing.find({});
      res.render("listings/index.ejs" ,{allListings});
