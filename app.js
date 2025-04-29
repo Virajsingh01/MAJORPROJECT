@@ -5,8 +5,11 @@
   const path =  require("path");
 const methodOverride =require("method-override");
 const ejsMate = require("ejs-mate");
+<<<<<<< HEAD
 
 const wrapAsync =require("./utils/wrapAsync.js");
+=======
+>>>>>>> 0efc0505e03c470e56576552c452805bdb558c46
 const MONGO_URL ="mongodb://127.0.0.1:27017/wanderlust";
   
 main().then(()=>{
@@ -49,6 +52,7 @@ app.get("/listings/:id" , async(req,res)=>{
 });
 //create route
 
+<<<<<<< HEAD
 app.post("/listings" ,wrapAsync(async(req,res , next)=>{
    // let {title , description,image , price ,country , location} = req.body;
    
@@ -61,6 +65,16 @@ res.redirect("/listings");
 
 })
 ); 
+=======
+app.post("/listings" ,async(req,res) =>{
+   // let {title , description,image , price ,country , location} = req.body;
+   
+   const newListing =new Listing(req.body.listing);
+   await newListing.save();
+res.redirect("/listings");    
+
+}); 
+>>>>>>> 0efc0505e03c470e56576552c452805bdb558c46
 
 //edit route
 app.get("/listings/:id/edit" ,async(req,res) =>{
@@ -98,11 +112,14 @@ await sampleListing.save();
 console.log("sample was saved");
 res.send("Successful tesing");
 }); */
+<<<<<<< HEAD
 
 app.use((err, req, res, next) => {
    res.send("Something went wrong");
   });
 
+=======
+>>>>>>> 0efc0505e03c470e56576552c452805bdb558c46
   app.listen(8080 ,()=>{
     console.log("listening to port");
   });
