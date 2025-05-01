@@ -1,7 +1,6 @@
 body{
 
 font-family: "Plus Jakarta Sans" ,sans-serif !important;
-<<<<<<< HEAD
 display: flex;
 flex-direction: column;
 min-height: 100vh;
@@ -10,10 +9,6 @@ min-height: 100vh;
     flex: 1;
 }
 
-=======
-
-}
->>>>>>> 0efc0505e03c470e56576552c452805bdb558c46
 
 
 .navbar{
@@ -100,7 +95,6 @@ color: #222222  ;
 opacity: 0.2;
 background-color: white;
 }
-<<<<<<< HEAD
 .add-btn{
     background-color: #fe424d !important;
     border: none !important;
@@ -131,5 +125,3 @@ background-color: white;
     padding-left: 0;
     padding-right: 0;
 }
-=======
->>>>>>> 0efc0505e03c470e56576552c452805bdb558c46

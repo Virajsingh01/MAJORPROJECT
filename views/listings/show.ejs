@@ -1,5 +1,4 @@
 <% layout("/layouts/boilerplate") %>   
-<<<<<<< HEAD
 <div class="row mt-3">
 
     <div class="col-8 offset-2">
@@ -34,22 +33,3 @@
     </form>
 </div>
 </div>
-=======
-<body>
-    <h3>Listing Details:</h3>
-    <ul>
-<li><%= listing.title%></li>
-<li><%= listing.description%></li>
-
-<li>&#8377;<%= listing.price.toLocaleString("en-IN")%></li>
-<li><%= listing.location%></li>
-<li><%= listing.country%></li>
-    </ul>
-    <br/>
-    <a href="/listings/<%= listing._id%>/edit">Edit this Listing</a>
-    <br><br>
-    <form method="POST" action="/listings/<%=listing._id%>?_method=DELETE">
-        <button>Delete this listing</button>
-    </form>
-</body>
->>>>>>> 0efc0505e03c470e56576552c452805bdb558c46
