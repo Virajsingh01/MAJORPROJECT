@@ -9,8 +9,7 @@ const ejsMate = require("ejs-mate");
 const wrapAsync =require("./utils/wrapAsync.js");
 const ExpressError =require("./utils/ExpressError.js");
 const {listingSchema} = require("./schema.js");
-const MONGO_URL ="mongodb+srv://rajputviraj0007:CtywgtVRp2NyfYHH@cluster0.fkpdftm.mongodb.net/wanderlust";  //rajputviraj0007     //CtywgtVRp2NyfYHH
-//mongodb+srv://rajputviraj0007:CtywgtVRp2NyfYHH@cluster0.fkpdftm.mongodb.net/
+const MONGO_URL ="mongodb://127.0.0.1:27017/wanderlust";
   
 main().then(()=>{
     console.log("connected to DB");
